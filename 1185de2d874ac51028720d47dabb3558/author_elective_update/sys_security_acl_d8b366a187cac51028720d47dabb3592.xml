@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Allow write for records in x_379823_chat_room_chat_rooms, for users with role x_379823_chat_room.chat_room_admin, and if the ACL condition (room_adminDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ) evaluates to true.</description>
+        <name>x_379823_chat_room_chat_rooms.comments</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[answer = gs.getUser().isMemberOf(current.u_assignment_group.getDisplayValue());
+var loggedInUser = gs.getUserID();
+if (current.room_admin == loggedInUser.toString()) {
+    answer = true;
+} else {
+    var membersList = current.u_glide_list_1;
+    answer = membersList.includes(loggedInUser.toString());
+}]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-05 09:34:43</sys_created_on>
+        <sys_id>d8b366a187cac51028720d47dabb3592</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_379823_chat_room_chat_rooms.comments</sys_name>
+        <sys_package display_value="Chat Rooms" source="x_379823_chat_room">1185de2d874ac51028720d47dabb3558</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Chat Rooms">1185de2d874ac51028720d47dabb3558</sys_scope>
+        <sys_update_name>sys_security_acl_d8b366a187cac51028720d47dabb3592</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-05 09:34:43</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Chat Rooms">1185de2d874ac51028720d47dabb3558</application>
+        <file_path/>
+        <instance_id>5492f400db6501501b813feb689619b6</instance_id>
+        <instance_name>dev124645</instance_name>
+        <name>sys_security_acl_d8b366a187cac51028720d47dabb3592</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;condition/&gt;&lt;description&gt;Allow write for records in x_379823_chat_room_chat_rooms, for users with role x_379823_chat_room.chat_room_admin, and if the ACL condition (room_adminDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ) evaluates to true.&lt;/description&gt;&lt;name&gt;x_379823_chat_room_chat_rooms.comments&lt;/name&gt;&lt;operation display_value="write"&gt;write&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[answer = gs.getUser().isMemberOf(current.u_assignment_group.getDisplayValue());
+var loggedInUser = gs.getUserID();
+if (current.room_admin == loggedInUser.toString()) {
+    answer = true;
+} else {
+    var membersList = current.u_glide_list_1;
+    answer = membersList.includes(loggedInUser.toString());
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-05 09:34:43&lt;/sys_created_on&gt;&lt;sys_id&gt;d8b366a187cac51028720d47dabb3592&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_379823_chat_room_chat_rooms.comments&lt;/sys_name&gt;&lt;sys_package display_value="Chat Rooms" source="x_379823_chat_room"&gt;1185de2d874ac51028720d47dabb3558&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Chat Rooms"&gt;1185de2d874ac51028720d47dabb3558&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_d8b366a187cac51028720d47dabb3592&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-05 09:34:43&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1673876922</payload_hash>
+        <record_name>x_379823_chat_room_chat_rooms.comments</record_name>
+        <reverted_from/>
+        <source>5585de2d874ac51028720d47dabb355a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-05 09:34:43</sys_created_on>
+        <sys_id>d8b366a187cac51028720d47dabb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f596e6c800000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-05 09:34:43</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>d0b366a1f4cac51051eae36f29ac8795</update_guid>
+        <update_guid_history>d0b366a1f4cac51051eae36f29ac8795:1673876922</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-05 09:44:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>07cd3cb612e848648312704eec350ba4</sys_id>
+        <sys_metadata>d8b366a187cac51028720d47dabb3592</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_379823_chat_room_chat_rooms.comments</sys_name>
+        <sys_package display_value="Chat Rooms" source="x_379823_chat_room">1185de2d874ac51028720d47dabb3558</sys_package>
+        <sys_parent display_value="x_379823_chat_room_chat_rooms">1a0716a1878ac51028720d47dabb354f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Chat Rooms">1185de2d874ac51028720d47dabb3558</sys_scope>
+        <sys_scope_delete display_value="">4edb46be0bdd4420b10e8f76a84a6400</sys_scope_delete>
+        <sys_update_name>sys_security_acl_d8b366a187cac51028720d47dabb3592</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_d8b366a187cac51028720d47dabb3592">d8b366a187cac51028720d47dabb3595</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-05 09:44:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
