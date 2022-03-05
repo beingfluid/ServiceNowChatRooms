@@ -16,17 +16,34 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-05 10:11:43</sys_created_on>
         <sys_id>962c262d87cac51028720d47dabb35cc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Chat Rooms" source="x_379823_chat_room">1185de2d874ac51028720d47dabb3558</sys_package>
         <sys_policy/>
         <sys_scope display_value="Chat Rooms">1185de2d874ac51028720d47dabb3558</sys_scope>
         <sys_update_name>sp_instance_962c262d87cac51028720d47dabb35cc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-05 10:11:43</sys_updated_on>
+        <sys_updated_on>2022-03-05 10:52:53</sys_updated_on>
         <title/>
         <url/>
-        <widget_parameters/>
+        <widget_parameters><![CDATA[{
+	"use_dynamic_placeholder": {
+		"value": "",
+		"displayValue": ""
+	},
+	"no_readable_journal_field_message": {
+		"value": "",
+		"displayValue": ""
+	},
+	"enter_key_behavior": {
+		"value": "",
+		"displayValue": ""
+	},
+	"gifhy_api_code": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
     </sp_instance>
     <sys_translated_text action="delete_multiple" query="documentkey=962c262d87cac51028720d47dabb35cc"/>
 </record_update>
