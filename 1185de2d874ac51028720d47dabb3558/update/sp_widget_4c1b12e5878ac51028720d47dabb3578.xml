@@ -386,6 +386,11 @@
 	}
 
 	$scope.userTyping = function(input) {
+		//Giphy Start
+		c.data.search=input;
+		c.uiAction('search','');
+		//Giphy End
+		
 		var status = "viewing";
 		if (input.length)
 			status = "typing";
@@ -947,7 +952,7 @@ img {
         var response = request.execute();
         var httpResponseStatus = response.getStatusCode();
         var httpResponseContentType = response.getHeader('Content-Type');
-        var parser = new JSONParser();
+        //var parser = new JSONParser();
         var parsed = {};
         var httpResponseBody;
 
@@ -957,7 +962,7 @@ img {
         if (httpResponseStatus == 200 && httpResponseContentType == 'application/json') {
             httpResponseBody = response.getBody();
             //  parse JSON string returned from request into a object
-            parsed = parser.parse(httpResponseBody);
+            parsed = JSON.parse(httpResponseBody);
 
             for (var is = 0; is < parsed.data.length; is++) {
 
@@ -990,14 +995,14 @@ img {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-05 08:57:00</sys_created_on>
         <sys_id>4c1b12e5878ac51028720d47dabb3578</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Chat Room Conversations</sys_name>
         <sys_package display_value="Chat Rooms" source="x_379823_chat_room">1185de2d874ac51028720d47dabb3558</sys_package>
         <sys_policy/>
         <sys_scope display_value="Chat Rooms">1185de2d874ac51028720d47dabb3558</sys_scope>
         <sys_update_name>sp_widget_4c1b12e5878ac51028720d47dabb3578</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-05 10:57:23</sys_updated_on>
+        <sys_updated_on>2022-03-05 11:31:51</sys_updated_on>
         <template><![CDATA[<div>
   <div ng-if="!data.canRead && !data.isNewRecord">
     ${Requested record not found}
@@ -1020,15 +1025,23 @@ img {
               <span class="glyphicon glyphicon-barcode"></span>
             </button>
           </span>
-          <span>
-            <img data-toggle="modal" data-target="#ModalCenter" class="giphy" src="giphy.png" >
-          </span>
           <span ng-if="::(!data.hideAttachmentBtn)"><sp-attachment-button ng-if="::data.canWrite && data.canAttach"></sp-attachment-button></span>
         </div>
       </div>
-
     </div>
-
+    <!-- Giphy -->
+    <div>
+      <div ng-if="data.configure_giphy" style="color:red;">
+        Please contact your system administrator, GIPhy API is not configured
+      </div>
+     
+      <div class="input-group" style="margin-top: 5px;">
+        <div ng-repeat="obj in c.data.gifs" style="float: left; margin: 10;">
+          <a ng-click="c.uiAction('paste',obj.fixed_width)"><img src="{{obj.preview_url}}" style="max-width: 100px;"></a>
+        </div>
+      </div>
+    </div>
+    <!-- Giphy End-->
     <div class="panel-body">
       <div ng-if="data.hasReadableJournalField">
         <div ng-show="data.hasWritableJournalField" class="input-group">
@@ -1167,40 +1180,6 @@ img {
       </div>
       <div ng-if="!data.hasReadableJournalField">
         {{options.no_readable_journal_field_message}}
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Giphy Modal -->
-<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="giphyModal" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Say it with a GIF!</h5>
-      </div>
-      <div class="modal-body">
-
-        <div ng-if="data.configure_giphy" style="color:red;">
-          Please contact your system administrator, GIPhy API is not configured
-        </div>
-        <div class="input-group">
-
-          <span class="input-group-addon">Search gifs</span>
-
-          <input type="text" ng-change="c.uiAction('search','')" class="form-control" ng-model="c.data.search">
-
-        </div>
-        <div class="input-group" style="margin-top: 5px;">
-          <div ng-repeat="obj in c.data.gifs" style="float: left; margin: 10;">
-            <a ng-click="c.uiAction('paste',obj.fixed_width)"><img src="{{obj.preview_url}}" style="max-width: 100px;"></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <a href="https://giphy.com/" target="_blank"><img src="giphy_logo.png" style="float:left;"></a>
       </div>
     </div>
   </div>
