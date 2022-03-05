@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="INSERT_OR_UPDATE">
+        <class_name/>
+        <order>1</order>
+        <sp_column/>
+        <sp_container display_value="Chat Rooms Home - Container 1">1a4b56a5878ac51028720d47dabb35f0</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-05 10:11:07</sys_created_on>
+        <sys_id>a90cee2d87cac51028720d47dabb35cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Chat Rooms" source="x_379823_chat_room">1185de2d874ac51028720d47dabb3558</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Chat Rooms">1185de2d874ac51028720d47dabb3558</sys_scope>
+        <sys_update_name>sp_row_a90cee2d87cac51028720d47dabb35cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-05 10:11:07</sys_updated_on>
+    </sp_row>
+</record_update>

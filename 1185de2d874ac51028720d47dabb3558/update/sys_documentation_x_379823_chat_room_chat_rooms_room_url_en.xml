@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="room_url" label="Room URL" language="en" table="x_379823_chat_room_chat_rooms">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>room_url</element>
+            <help/>
+            <hint/>
+            <label>Room URL</label>
+            <language>en</language>
+            <name>x_379823_chat_room_chat_rooms</name>
+            <plural>Room URLs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-05 08:39:27</sys_created_on>
+            <sys_id>3e0756a1878ac51028720d47dabb3591</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Room URL</sys_name>
+            <sys_package display_value="Chat Rooms" source="x_379823_chat_room">1185de2d874ac51028720d47dabb3558</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Chat Rooms">1185de2d874ac51028720d47dabb3558</sys_scope>
+            <sys_update_name>sys_documentation_x_379823_chat_room_chat_rooms_room_url_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-05 08:39:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">145b12e5878ac51028720d47dabb35b9</sp_column>
+        <sp_widget display_value="Chat Room Conversations">4c1b12e5878ac51028720d47dabb3578</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-05 08:58:10</sys_created_on>
+        <sys_id>b45b1ea5878ac51028720d47dabb35c7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Chat Rooms" source="x_379823_chat_room">1185de2d874ac51028720d47dabb3558</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Chat Rooms">1185de2d874ac51028720d47dabb3558</sys_scope>
+        <sys_update_name>sp_instance_b45b1ea5878ac51028720d47dabb35c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-05 10:11:09</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=b45b1ea5878ac51028720d47dabb35c7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Chat Rooms">1185de2d874ac51028720d47dabb3558</application>
+        <file_path/>
+        <instance_id>5492f400db6501501b813feb689619b6</instance_id>
+        <instance_name>dev124645</instance_name>
+        <name>sp_instance_b45b1ea5878ac51028720d47dabb35c7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">145b12e5878ac51028720d47dabb35b9</sp_column><sp_widget display_value="Chat Room Conversations">4c1b12e5878ac51028720d47dabb3578</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-03-05 08:58:10</sys_created_on><sys_id>b45b1ea5878ac51028720d47dabb35c7</sys_id><sys_mod_count>2</sys_mod_count><sys_name/><sys_package display_value="Chat Rooms" source="x_379823_chat_room">1185de2d874ac51028720d47dabb3558</sys_package><sys_policy/><sys_scope display_value="Chat Rooms">1185de2d874ac51028720d47dabb3558</sys_scope><sys_update_name>sp_instance_b45b1ea5878ac51028720d47dabb35c7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-03-05 10:11:09</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=b45b1ea5878ac51028720d47dabb35c7"/></record_update>]]></payload>
+        <payload_hash>-1405384253</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5585de2d874ac51028720d47dabb355a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-05 10:11:09</sys_created_on>
+        <sys_id>4e0c226d87cac51028720d47dabb3507</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f598fc8c80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-05 10:11:09</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>060c226d44cac5101b54529ba274cb07</update_guid>
+        <update_guid_history>060c226d44cac5101b54529ba274cb07:-1405384253,060c226d0acac510c3aff4523ad84e03:36605958,f85b1ea5f88ac5101c6a061fc43d26c9:-1405384253</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">801ca22d87cac51028720d47dabb3590</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-05 10:11:17</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>127b6f18ce9a432cb6e903a8d8ef6d71</sys_id>
+        <sys_metadata>b45b1ea5878ac51028720d47dabb35c7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Chat Rooms" source="x_379823_chat_room">1185de2d874ac51028720d47dabb3558</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Chat Rooms">1185de2d874ac51028720d47dabb3558</sys_scope>
+        <sys_scope_delete display_value="">4edb46be0bdd4420b10e8f76a84a6400</sys_scope_delete>
+        <sys_update_name>sp_instance_b45b1ea5878ac51028720d47dabb35c7</sys_update_name>
+        <sys_update_version display_value="sp_instance_b45b1ea5878ac51028720d47dabb35c7">4e0c226d87cac51028720d47dabb3507</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-05 10:11:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
